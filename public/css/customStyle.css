@@ -1,0 +1,165 @@
+.card-header{
+    font-weight: bold;
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+#button_go{
+    background-color: cyan;
+    border-color: cyan;
+    color: black;
+    font-weight: bold;
+	width: 150px;
+	height: 40px;
+}
+
+#button_add{
+    background-color: cyan;
+    border-color: cyan;
+    color: black;
+    font-weight: bold;
+	width: 300px;
+	height: 40px;
+}
+
+#button_save{
+    background-color: cyan;
+    border-color: cyan;
+    color: black;
+    font-weight: bold;
+	width: 100px;
+	height: 40px;
+}
+
+#button_login{
+    background-color: cyan;
+    border-color: cyan;
+	color: black;
+	width: 80px;
+	height: 40px;
+}
+
+#button_register{
+    background-color: cyan;
+    border-color: cyan;
+	color: black;
+	width: 120px;
+	height: 40px;
+}
+
+#button_delete{
+    background-color: red;
+    border-color: red;
+    color: black;
+    font-weight: bold;
+	width: 150px;
+	height: 40px;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    background-color: deeppink;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    background-color: cyan; 
+    padding-top: 45px;
+}
+  
+  /* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    display: block;
+}
+  
+  /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: dimgray;
+}
+
+#button_toUsd{
+    background-color: green;
+    border-color: green;
+	color: pink;
+	width: 150px;
+	height: 40px;
+}
+
+#button_goBigger{
+    background-color: pink;
+    border-color: pink;
+    color: black;
+    font-weight: bold;
+	width: 200px;
+	height: 40px;
+}
+
+#button_goMuyBigger{
+    background-color: pink;
+    border-color: pink;
+	color: black;
+	width: 150px;
+	height: 60px;
+}
+
+#button_addCart{
+    background-color: pink;
+    border-color: darkgreen;
+	color: black;
+	width: 500px;
+	height: 40px;
+}
+
+nav{
+    background-color: cyan;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
