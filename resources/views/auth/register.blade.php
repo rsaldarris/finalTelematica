@@ -28,6 +28,53 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="carrera" class="col-md-4 col-form-label text-md-right">@lang('messages.carrera')</label>
+
+                            <div class="col-md-6">
+                                <!-- <input id="carrera" type="text" class="form-control @error('carrera') is-invalid @enderror" name="carrera" value="{{ old('carrera') }}" required autocomplete="carrera" autofocus> -->
+                                <select name="carrera">
+                                    <option value="Medicina" {{ (old("carrera") == "Medicina") ? "selected" : ""}}>@lang('messages.Medicina')</option> 
+                                    <option value="Ingenieria" {{ (old("carrera") == "Ingenieria") ? "selected" : ""}}>@lang('messages.Ingenieria')</option>
+                                    <option value="Abogacia" {{ (old("carrera") == "Abogacia") ? "selected" : ""}}>@lang('messages.Abogacia')</option>
+                                    <option value="Licenciatura" {{ (old("carrera") == "Licenciatura") ? "selected" : ""}}>@lang('messages.Licenciatura')</option>
+                                </select>
+
+                                @error('carrera')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="comuna" class="col-md-4 col-form-label text-md-right">@lang('messages.comuna')</label>
+
+                            <div class="col-md-6">
+                                <!-- <input id="comuna" type="text" class="form-control @error('comuna') is-invalid @enderror" name="comuna" value="{{ old('comuna') }}" required autocomplete="comuna" autofocus> -->
+
+                                <select name="comuna">
+                                    <option value="1" {{ (old("comuna") == "1") ? "selected" : ""}}>1</option> 
+                                    <option value="2" {{ (old("comuna") == "2") ? "selected" : ""}}>2</option>
+                                    <option value="3" {{ (old("comuna") == "3") ? "selected" : ""}}>3</option>
+                                    <option value="4" {{ (old("comuna") == "4") ? "selected" : ""}}>4</option>
+                                    <option value="5" {{ (old("comuna") == "5") ? "selected" : ""}}>5</option>
+                                    <option value="6" {{ (old("comuna") == "6") ? "selected" : ""}}>6</option>
+                                    <option value="7" {{ (old("comuna") == "7") ? "selected" : ""}}>7</option>
+                                    <option value="8" {{ (old("comuna") == "8") ? "selected" : ""}}>8</option>
+                                    <option value="9" {{ (old("comuna") == "9") ? "selected" : ""}}>9</option>
+                                    <option value="10" {{ (old("comuna") == "10") ? "selected" : ""}}>10</option>
+                                </select>
+
+                                @error('comuna')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">@lang('messages.name')</label>
 
                             <div class="col-md-6">

@@ -26,15 +26,15 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">       
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="{{ route('automovil.show') }}">
-                                <b>Autos</b>
-                            </a>
+                                <a class="dropdown-item" href="{{ route('user.list') }}">
+                                    <b>@lang('messages.userList')</b>
+                                </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="{{ route('allies.api') }}">
                                 <b>@lang('messages.allies')</b>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 
                     
@@ -70,13 +70,9 @@
                                     <b>{{ Auth::user()->name }}</b>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    @if (Auth::user()->getRole()=="admin")
-                                        <a class="dropdown-item" href="{{ route('automovil.create') }}">
-                                            <b>Crear Automovil</b>
-                                        </a>
-                                    @endif
-
-
+                                    <a class="dropdown-item" href="{{ route('user.edit',Auth::user()->getId()) }}">
+                                        <b>@lang('messages.editProfile')</b>
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
                                         <b>@lang('messages.logout')</b>

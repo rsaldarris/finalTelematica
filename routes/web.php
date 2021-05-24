@@ -34,5 +34,9 @@ Route::get('/allies/api','AlliesController@api')->name("allies.api");
 Route::post('/automovil/edit/{id}', 'AutomovilController@edit')->name("automovil.edit");
 Route::post('/automovil/saveEdit', 'AutomovilController@saveEdit')->name("automovil.saveEdit");
 
+Route::get('/user/list', 'UserController@list')->name("user.list");
+Route::get('/user/edit/{id}', 'UserController@edit')->name("user.edit");
+Route::post('/user/saveEdit', 'UserController@saveEdit')->name("user.saveEdit");
+
 });
 

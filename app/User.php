@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'user' ,'name', 'email', 'password',
+        'user' ,'name', 'email', 'password','carrera', 'comuna'
     ];
 
     /**
@@ -67,6 +67,22 @@ class User extends Authenticatable
         $this->attributes['user'] = $user;
     }
 
+    public function getCarrera(){
+        return $this->attributes['carrera'];
+    }
+
+    public function setCarrera($carrera){
+        $this->attributes['carrera'] = $carrera;
+    }
+
+    public function getComuna(){
+        return $this->attributes['comuna'];
+    }
+
+    public function setComuna($comuna){
+        $this->attributes['comuna'] = $comuna;
+    }
+
     public function getEmail(){
         return $this->attributes['email'];
     }
@@ -83,33 +99,14 @@ class User extends Authenticatable
         $this->attributes['password'] = $password;
     }
 
-    public function comments(){
-        return $this->hasMany(ProductComment::class);
-    }
-
-    public function post(){
-        return $this->hasMany(Post::class);
-    }
-
-    public function orders(){
-        return $this->hasMany(Order::class);
-    }
-
-    public function favoritePosts(){
-        return $this->hasMany(FavPosts::class);
-    }
-
-    public function wishList(){
-        return $this->hasMany(WishList::class);
-    }
-
     public static function validate(){
         return [
             'user' => ['required', 'string', 'max:255'],
+            'carrera' => ['required', 'string', 'max:255'],
+            'comuna' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255',],
             'password' => ['required', 'string', 'min:8', 'confirmed']
         ];
     }
-
 }

@@ -1,6 +1,12 @@
 <?php 
 
 return [
+    'carrera'=>'Degree',
+    'comuna'=>'Commune',
+    'Licenciatura'=>'Master',
+    'Ingenieria'=>'Engineering',
+    'Medicina'=>'Medicine',
+    'Abogacia'=>'Legal Profession',
     'guestCreateProduct'=>'You need to be an Admin to create a product ',
     'favposts'=>'Favorite Posts',
     'english'=>'English',
