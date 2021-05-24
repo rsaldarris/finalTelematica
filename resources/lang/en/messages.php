@@ -3,7 +3,9 @@
 return [
     'carrera'=>'Degree',
     'emailus'=>'Send an Email',
+    'sucessmail'=>'Email send correctly',
     'comuna'=>'Commune',
+    'porcentaje'=>'Percentage of total',
     'Licenciatura'=>'Master',
     'Ingenieria'=>'Engineering',
     'Medicina'=>'Medicine',

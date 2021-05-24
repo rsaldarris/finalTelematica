@@ -38,5 +38,7 @@ Route::get('/user/list', 'UserController@list')->name("user.list");
 Route::get('/user/edit/{id}', 'UserController@edit')->name("user.edit");
 Route::post('/user/saveEdit', 'UserController@saveEdit')->name("user.saveEdit");
 
+Route::post('/user/list', 'EmailController@stats')->name('mail.stats');
+
 });
 

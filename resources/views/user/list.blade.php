@@ -14,6 +14,20 @@
 
                         <a href="mailto:ialondonoo@eafit.edu.co?subject=Estadisticas&body= {{$data['estadisticas']}}">@lang('messages.emailus')</a><br>
 
+                        <div class="divider-custom divider-light">
+                            <div class="divider-custom-icon">
+                                <form method="POST" action="{{ route('mail.stats') }}">
+                                    {{ csrf_field() }}
+                                    <div class="form-group">
+                                        <input name="sobre" type="hidden">
+                                    </div>
+                                    <button type="submit" id='btn-contact' class="btn text-center text-uppercase text-green" style="background-color: white;">
+                                        @lang('messages.emailus')
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
                         <!-- {{$data["estadisticas"]}} -->
                         @if (Auth::user()->getRole()=="admin")
                             @lang('messages.comuna')["1"]["Medicina"] : {{$data["1"]["Medicina"]}}%<br>

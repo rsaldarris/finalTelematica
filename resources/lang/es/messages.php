@@ -3,7 +3,9 @@
 return [
     'carrera'=>'Carrera',
     'emailus'=>'Envia un correo',
+    'sucessmail'=>'Email enviado correctamente',
     'comuna'=>'Comuna',
+    'porcentaje'=>'Porcentaje del total',
     'Licenciatura'=>'Licenciatura',
     'Ingenieria'=>'Ingenieria',
     'Medicina'=>'Medicina',
