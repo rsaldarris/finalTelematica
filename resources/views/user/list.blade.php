@@ -8,30 +8,27 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            @if (Auth::user()->getRole()=="admin")
                 <div class="card bg-light mb-3 text-center">
                     <div class="card-body">
                         <h5 class="card-title" style="color:black">
-
-                        <!-- {{$data["estadisticas"]}} -->
-                        @if (Auth::user()->getRole()=="admin")
-                        <div class="divider-custom divider-light">
-                            <div class="divider-custom-icon">
-                                <form method="POST" action="{{ route('mail.stats') }}">
-                                    {{ csrf_field() }}
-                                    <div class="form-group">
-                                        <input name="sobre" type="hidden">
-                                    </div>
-                                    <button type="submit" id='btn-contact' class="btn text-center text-uppercase text-green" style="background-color: white;">
-                                        @lang('messages.emailus')
-                                    </button>
-                                </form>
+                            <div class="divider-custom divider-light">
+                                <div class="divider-custom-icon">
+                                    <form method="POST" action="{{ route('mail.stats') }}">
+                                        {{ csrf_field() }}
+                                        <div class="form-group">
+                                            <input name="sobre" type="hidden">
+                                        </div>
+                                        <button type="submit" id='btn-contact' class="btn text-center text-uppercase text-green" style="background-color: white;">
+                                            @lang('messages.emailus')
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        @endif
-
                         </h5>
                     </div>
                 </div>
+            @endif
             @foreach($data["user"] as $user)
                 <div class="card bg-light mb-3 text-center">
                     <div class="card-body">
