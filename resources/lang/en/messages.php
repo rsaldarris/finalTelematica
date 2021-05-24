@@ -2,6 +2,7 @@
 
 return [
     'carrera'=>'Degree',
+    'emailus'=>'Send an Email',
     'comuna'=>'Commune',
     'Licenciatura'=>'Master',
     'Ingenieria'=>'Engineering',

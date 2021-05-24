@@ -2,6 +2,7 @@
 
 return [
     'carrera'=>'Carrera',
+    'emailus'=>'Envia un correo',
     'comuna'=>'Comuna',
     'Licenciatura'=>'Licenciatura',
     'Ingenieria'=>'Ingenieria',

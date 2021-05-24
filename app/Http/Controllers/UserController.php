@@ -344,6 +344,71 @@ class UserController extends Controller{
             $data["10"]["cantidad"] = $data["10"]["cantidad"]/ $data["cantidad"] * 100;
         }
 
+        $data["estadisticas"] = 
+        Lang::get('messages.comuna')."[1][Medicina] : ".$data["1"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[1][Ingenieria]: " .$data["1"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[1][Abogacia]: " .$data["1"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[1][Licenciatura]: " .$data["1"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[1][cantidad]: " .$data["1"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[2][Medicina]: " .$data["2"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[2][Ingenieria]: " .$data["2"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[2][Abogacia]: " .$data["2"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[2][Licenciatura]: " .$data["2"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[2][cantidad]: " .$data["2"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[3][Medicina]: " .$data["3"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[3][Ingenieria]: " .$data["3"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[3][Abogacia]: " .$data["3"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[3][Licenciatura]: " .$data["3"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[3][cantidad]: " .$data["3"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[4][Medicina]: " .$data["4"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[4][Ingenieria]: " .$data["4"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[4][Abogacia]: " .$data["4"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[4][Licenciatura]: " .$data["4"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[4][cantidad]: " .$data["4"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[5][Medicina]: " .$data["5"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[5][Ingenieria]: " .$data["5"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[5][Abogacia]: " .$data["5"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[5][Licenciatura]: " .$data["5"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[5][cantidad]: " .$data["5"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[6][Medicina]: " .$data["6"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[6][Ingenieria]: " .$data["6"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[6][Abogacia]: " .$data["6"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[6][Licenciatura]: " .$data["6"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[6][cantidad]: " .$data["6"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[7][Medicina]: " .$data["7"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[7][Ingenieria]: " .$data["7"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[7][Abogacia]: " .$data["7"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[7][Licenciatura]: " .$data["7"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[7][cantidad]: " .$data["7"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[8][Medicina]: " .$data["8"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[8][Ingenieria]: " .$data["8"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[8][Abogacia]: " .$data["8"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[8][Licenciatura]: " .$data["8"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[8][cantidad]: " .$data["8"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[9][Medicina]: " .$data["9"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[9][Ingenieria]: " .$data["9"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[9][Abogacia]: " .$data["9"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[9][Licenciatura]: " .$data["9"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[9][cantidad]: " .$data["9"]["cantidad"]."%".chr(0x0D).chr(0x0A).
+
+        Lang::get('messages.comuna')."[10][Medicina]: " .$data["10"]["Medicina"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[10][Ingenieria]: " .$data["10"]["Ingenieria"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[10][Abogacia]: " .$data["10"]["Abogacia"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[10][Licenciatura]: " .$data["10"]["Licenciatura"]."%".chr(0x0D).chr(0x0A).
+        Lang::get('messages.comuna')."[10][cantidad]: " .$data["10"]["cantidad"]."%".chr(0x0D).chr(0x0A);
+
+
+
+
+
         return view('user.list')->with("data",$data);
     }
 
