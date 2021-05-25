@@ -8,7 +8,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            @if (Auth::user()->getRole()=="admin")
+            @guest
+            @elseif (Auth::user()->getRole()=="admin")
                 <div class="card bg-light mb-3 text-center">
                     <div class="card-body">
                         <h5 class="card-title" style="color:black">
@@ -35,7 +36,8 @@
                         <h5 class="card-title" style="color:black">
                         ID:{{ $user->getId() }} @lang('messages.user'):{{ $user->getUser() }} @lang('messages.name'):{{ $user->getName() }}| @lang('messages.carrera'):{{ $user->getCarrera() }}- @lang('messages.comuna'):{{ $user->getComuna() }}
                         </h5>
-                        @if (Auth::user()->getRole()=="admin")
+                        @guest
+                        @elseif (Auth::user()->getRole()=="admin")
                             <a href="{{ route('user.edit',$user->getId()) }}" id="button_go" class="btn btn-primary">@lang('messages.edit')</messagges></a>
                         @endif
                     </div>
